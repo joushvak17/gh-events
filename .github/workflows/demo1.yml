@@ -11,8 +11,8 @@ on:
       - master
       - dev
     # Define the paths that should be ignored
-    paths-ignore:
-      - ".github/workflows/*"
+    # paths-ignore:
+    #   - ".github/workflows/*"
 jobs:
   deploy:
     runs-on: ubuntu-latest
