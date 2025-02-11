@@ -1,6 +1,8 @@
 import MainContent from './components/MainContent';
 import logo from './assets/images/logo.png';
 
+// Comment to skip in GH Actions
+
 function App() {
   return (
     <>
