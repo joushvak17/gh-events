@@ -5,6 +5,14 @@ on:
     # Define the types of pull request events that should trigger the workflow
     types: [opened]
   workflow_dispatch:
+  push:
+    # Define the branches on which the workflow should run
+    branches:
+      - master
+      - dev
+    # Define the paths that should be ignored
+    paths-ignore:
+      - ".github/workflows/*"
 jobs:
   deploy:
     runs-on: ubuntu-latest
